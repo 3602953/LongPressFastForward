@@ -16,11 +16,12 @@
 ## 🛠 安装方式（开发者模式）  
 ## 🛠 Installation (Developer Mode)
 
-1. 克隆或下载本项目：  
+1. 克隆或下载本项目，并进行解压：  
    Clone or download this project:
    ```bash
    git clone https://github.com/3602953/Youtube_LongPressFastForward.git
    ```
+   and upzip the file
 
 2. 打开 Chrome 浏览器，输入 `chrome://extensions`  
    Open Chrome and go to `chrome://extensions`
@@ -28,10 +29,15 @@
 3. 打开右上角“开发者模式”  
    Enable "Developer Mode" at the top-right corner
 
-4. 点击“加载已解压的扩展程序”，选择本项目文件夹  
+<img width="1340" alt="image" src="https://github.com/user-attachments/assets/cbd228a5-6748-4505-a0c5-7890bec4bb59" />
+
+5. 点击“加载已解压的扩展程序”，选择本项目文件夹  
    Click "Load unpacked" and select this project folder
 
-5. 打开任意 YouTube 视频页，尽情体验！  
+<img width="1340" alt="image" src="https://github.com/user-attachments/assets/56cb9398-4f15-40ee-a356-6ebf026eea06" />
+
+
+6. 打开任意 YouTube 视频页，尽情体验！  
    Open any YouTube video and enjoy!
 
 ---
@@ -41,6 +47,8 @@
 
 点击扩展图标 → “选项”，输入你喜欢的倍速值（如 2.5、4.0）  
 Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4.0)
+
+<img width="750" alt="image" src="https://github.com/user-attachments/assets/7963efff-eff3-40b5-b0d7-2584fb5ac153" />
 
 ---
 
