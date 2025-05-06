@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>YouTube Speed Controller 设置</title>
+<style>
+    body { font-family: sans-serif; padding: 20px; }
+    label, input { font-size: 16px; }
+    input { width: 60px; margin-left: 10px; }
+    button { margin-top: 10px; padding: 5px 10px; }
+</style>
+</head>
+<body>
+<h2>自定义长按倍速</h2>
+<label>
+    倍速：
+    <input type="number" id="speedInput" min="1" step="0.1"/>
+    ×
+</label>
+<br>
+<button id="saveBtn">保存</button>
+<p id="status" style="color: green; display: none;">保存成功！</p>
+
+<script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Speed Controller",
+    "version": "1.2",
+    "description": "点按 ±5s，长按进入自定义倍速；彻底覆盖 YouTube 默认快进",
+    "permissions": ["scripting","activeTab","storage"],
+    "options_page": "options.html",
+    "content_scripts": [
+    {
+        "matches": ["*://*.youtube.com/*"],
+        "run_at": "document_start",
+        "js": ["contentScript.js"]
+    }
+    ]
+}
