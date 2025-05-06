@@ -10,8 +10,7 @@
 
 ---
 
-## 🛠 安装方式（开发者模式）  
-## 🛠 Installation (Developer Mode)
+## 🛠 安装方式（开发者模式）  Installation (Developer Mode)
 
 1. 克隆或下载本项目，并进行解压：  
    Clone or download this project:
@@ -39,8 +38,7 @@
 
 ---
 
-## ⚙ 自定义倍速  
-## ⚙ Customize Playback Speed
+## ⚙ 自定义倍速  Customize Playback Speed
 
 点击扩展图标 → “选项”，输入你喜欢的倍速值（如 2.5、4.0）  
 Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4.0)
@@ -49,8 +47,7 @@ Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4
 
 ---
 
-## 💡 特点  
-## 💡 Features
+## 💡 特点  Features
 
 - 支持键盘操作，无需鼠标点击  
   Keyboard control, no mouse needed
@@ -66,8 +63,7 @@ Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4
 
 ---
 
-## 📦 文件结构  
-## 📦 Project Structure
+## 📦 文件结构  Project Structure
 
 ```
 .
@@ -87,8 +83,7 @@ Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4
 
 ---
 
-## 📢 联系与反馈  
-## 📢 Feedback & Contribution
+## 📢 联系与反馈  Feedback & Contribution
 
 如果你喜欢这个插件，欢迎 Star⭐、Fork🍴、PR💬！  
 If you like this extension, feel free to Star ⭐, Fork 🍴, or contribute via PR 💬!
