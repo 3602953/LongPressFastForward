@@ -12,7 +12,7 @@
 
 1. 克隆或下载本项目：
    ```bash
-   git clone https://github.com/3602953/Youtube_LongPressSpeed.git
+   git clone https://github.com/3602953/Youtube_LongPressFastForward.git
 2. 打开 Chrome 浏览器，输入 chrome://extensions
 
 3. 打开右上角“开发者模式”
