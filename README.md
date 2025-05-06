@@ -2,9 +2,6 @@
 🎬 一个 Chrome 插件，帮助你更高效地观看 YouTube 视频：  
 🎬 A Chrome extension to help you watch YouTube more efficiently:
 
-- ⏩ 点按 ←/→ 快进或后退 5 秒  
-  ⏩ Tap ← / → to skip forward or backward by 5 seconds
-
 - 🚀 长按 ←/→ 启动自定义倍速（默认 3×，可配置）  
   🚀 Hold ← / → to enter a custom playback speed (default is 3×, configurable)
 
