@@ -80,8 +80,15 @@ Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4
 ├── options.html           # 设置页面  Settings page UI
 │                          
 ├── options.js             # 设置逻辑  Logic for saving custom speed
+│
+├── popup.html             # 工具栏弹窗UI Toolbar popup UI
+│
+├── popup.js               # 工具栏弹窗逻辑 Toolbar popup logic
 │                          
 ├── icons/                 # 图标素材  Icon assets
+│   ├── icon16.png
+│   ├── icon48.png
+│   └── icon128.png
 │                          
 └── README.md              # 项目说明文档  Project documentation
                            
