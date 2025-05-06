@@ -1,15 +1,29 @@
 {
     "manifest_version": 3,
-    "name": "YouTube Speed Controller",
+    "name": "YouTube Long Press Speed Controller",
     "version": "1.2",
-    "description": "点按 ±5s，长按进入自定义倍速；彻底覆盖 YouTube 默认快进",
-    "permissions": ["scripting","activeTab","storage"],
+    "description": "长按←/→倍速播放，松开恢复正常；覆盖 YouTube 默认长按快进",
+    "permissions": ["storage", "scripting", "activeTab"],
     "options_page": "options.html",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "action": {
+        "default_title": "YouTube Long Press Controller",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_popup": "popup.html" 
+    },
     "content_scripts": [
-    {
-        "matches": ["*://*.youtube.com/*"],
-        "run_at": "document_start",
-        "js": ["contentScript.js"]
-    }
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "run_at": "document_start",
+            "js": ["contentScript.js"]
+        }
     ]
 }

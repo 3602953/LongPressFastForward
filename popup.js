@@ -3,20 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const saveBtn = document.getElementById('saveBtn');
     const status = document.getElementById('status');
 
-    // 读取已保存的值（默认 3）
+    // 读取当前倍速
     chrome.storage.sync.get({ speedMultiplier: 3 }, ({ speedMultiplier }) => {
     input.value = speedMultiplier;
     });
 
     saveBtn.addEventListener('click', () => {
-    let val = parseFloat(input.value);
-    if (isNaN(val) || val < 1) {
-        alert('请输入不小于 1 的数字 Please enter a number greater than or equal to 1');
+    const newVal = parseFloat(input.value);
+    if (isNaN(newVal) || newVal < 1) {
+        status.textContent = '请输入 ≥1 的数字';
+        status.textContent = 'Please enter a number greater than or equal to 1';
         return;
     }
-    chrome.storage.sync.set({ speedMultiplier: val }, () => {
-        status.style.display = 'block';
-        setTimeout(() => status.style.display = 'none', 1000);
+
+    chrome.storage.sync.set({ speedMultiplier: newVal }, () => {
+        status.textContent = `保存成功 Saved`;
+        setTimeout(() => status.textContent = '', 1500);
     });
     });
 });

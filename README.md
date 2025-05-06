@@ -40,7 +40,12 @@
 
 ## ⚙ 自定义倍速  Customize Playback Speed
 
-点击扩展图标 → “选项”，输入你喜欢的倍速值（如 2.5、4.0）  
+1. 点击工具栏图标，输入你喜欢的倍速值（如 2.5、4.0）
+Click the icon from the toolbar → Enter your desired speed (e.g. 2.5, 4.0)
+
+<img width="304" alt="image" src="https://github.com/user-attachments/assets/eadbf9a9-21c2-41ee-a75c-7bade9327dd9" />
+
+2. 点击扩展图标 → “选项” → 输入你喜欢的倍速值（如 2.5、4.0）  
 Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4.0)
 
 <img width="750" alt="image" src="https://github.com/user-attachments/assets/7963efff-eff3-40b5-b0d7-2584fb5ac153" />
@@ -68,18 +73,18 @@ Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4
 
 ```
 .
-├── manifest.json          # 插件描述  
-│                          # Extension manifest
-├── contentScript.js       # 主功能逻辑  
-│                          # Main keyboard and speed logic
-├── options.html           # 设置页面  
-│                          # Settings page UI
-├── options.js             # 设置逻辑  
-│                          # Logic for saving custom speed
-├── icons/                 # 图标素材
-│                          # Icon assets
-└── README.md              # 项目说明文档  
-                           # Project documentation
+├── manifest.json          # 插件描述  Extension manifest
+│                          
+├── contentScript.js       # 主功能逻辑  Main keyboard and speed logic
+│                          
+├── options.html           # 设置页面  Settings page UI
+│                          
+├── options.js             # 设置逻辑  Logic for saving custom speed
+│                          
+├── icons/                 # 图标素材  Icon assets
+│                          
+└── README.md              # 项目说明文档  Project documentation
+                           
 ```
 
 ---

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>倍速设置</title>
+<style>
+    :root {
+    --primary: #8462d4;
+    --primary-light: #e4d8ff;
+    --text: #333;
+    --bg: #faf9fe;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
+
+    body {
+    margin: 0;
+    padding: 16px;
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-width: 220px;
+    animation: fadeIn 0.4s ease;
+    }
+
+    h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: var(--primary);
+    }
+
+    label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    }
+
+    input[type="number"] {
+    width: 80px;
+    padding: 6px 10px;
+    font-size: 16px;
+    border: 1px solid var(--primary-light);
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+    }
+
+    input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 4px var(--primary);
+    }
+
+    button {
+    margin-top: 12px;
+    padding: 6px 14px;
+    font-size: 14px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    }
+
+    button:hover {
+    background: #a683e5;
+    }
+
+    #status {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--primary);
+    transition: opacity 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+<h2>设置倍速 Settings</h2>
+<label for="speedInput">倍速值 Speed：</label>
+<input id="speedInput" type="number" min="1" step="0.1" />
+<br />
+<button id="saveBtn">保存 Save</button>
+<div id="status"></div>
+
+<script src="popup.js"></script>
+</body>
+</html>
