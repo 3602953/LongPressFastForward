@@ -44,6 +44,7 @@
 Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4.0)
 
 <img width="750" alt="image" src="https://github.com/user-attachments/assets/7963efff-eff3-40b5-b0d7-2584fb5ac153" />
+<img width="396" alt="image" src="https://github.com/user-attachments/assets/3d9d154a-7e41-424f-800e-b6babb95d118" />
 
 ---
 
@@ -75,8 +76,8 @@ Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4
 │                          # Settings page UI
 ├── options.js             # 设置逻辑  
 │                          # Logic for saving custom speed
-├── icons/                 # 图标素材（可选）  
-│                          # Icon assets (optional)
+├── icons/                 # 图标素材
+│                          # Icon assets
 └── README.md              # 项目说明文档  
                            # Project documentation
 ```
