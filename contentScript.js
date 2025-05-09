@@ -5,35 +5,6 @@
     let holdTimeout = null;
     let speedMultiplier = 3;
     let direction = null;
-    let hasVideo = false;
-
-    // 检查页面是否有视频元素
-    function checkForVideo() {
-        const video = document.querySelector('video');
-        hasVideo = !!video;
-        if (!hasVideo) {
-            // 如果页面没有视频，移除事件监听器
-            window.removeEventListener('keydown', onKeyDown, true);
-            window.removeEventListener('keyup', onKeyUp, true);
-        } else {
-            // 如果页面有视频，添加事件监听器
-            window.addEventListener('keydown', onKeyDown, true);
-            window.addEventListener('keyup', onKeyUp, true);
-        }
-    }
-
-    // 初始检查
-    checkForVideo();
-
-    // 监听DOM变化，检测视频元素的添加和移除
-    const observer = new MutationObserver(() => {
-        checkForVideo();
-    });
-
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true
-    });
 
     // 获取并监听倍速值
     chrome.storage.sync.get({ speedMultiplier: 3 }, ({ speedMultiplier: stored }) => {
@@ -105,10 +76,13 @@
 
     // 键盘事件拦截
     function onKeyDown(e) {
-        if (!hasVideo) return;
         if (e.code !== 'ArrowRight' && e.code !== 'ArrowLeft') return;
         const tag = document.activeElement.tagName;
         if (tag === 'INPUT' || tag === 'TEXTAREA' || (tag === 'DIV' && document.activeElement.isContentEditable)) return;
+
+        // 检查是否有视频元素
+        const video = document.querySelector('video');
+        if (!video) return;
 
         e.preventDefault();
         e.stopImmediatePropagation();
@@ -126,8 +100,12 @@
     }
 
     function onKeyUp(e) {
-        if (!hasVideo) return;
         if (e.code !== 'ArrowRight' && e.code !== 'ArrowLeft') return;
+        
+        // 检查是否有视频元素
+        const video = document.querySelector('video');
+        if (!video) return;
+
         e.preventDefault();
         e.stopImmediatePropagation();
 
@@ -147,10 +125,13 @@
         direction = null;
     }
 
+    // 添加事件监听器
+    window.addEventListener('keydown', onKeyDown, true);
+    window.addEventListener('keyup', onKeyUp, true);
+
     window.addEventListener('beforeunload', () => {
         const ind = document.getElementById('speed-indicator');
         if (ind) ind.remove();
         clearInterval(window.backwardTimer);
-        observer.disconnect();
     });
 })();
