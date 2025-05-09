@@ -1,12 +1,15 @@
-# YouTube Long Press Fast Forward Controller 🔥  
-🎬 一个 Chrome 插件，帮助你更高效地观看 YouTube 视频：  
-🎬 A Chrome extension to help you watch YouTube more efficiently:
+# Video Long Press Fast Forward Controller 🔥  
+🎬 一个 Chrome 插件，帮助你更高效地观看视频：  
+🎬 A Chrome extension to help you watch videos more efficiently:
 
 - 🚀 长按 ←/→ 启动自定义倍速（默认 3×，可配置）  
   🚀 Hold ← / → to enter a custom playback speed (default is 3×, configurable)
 
 - ✅ 松开自动恢复 1×，带浮窗提示当前速度  
   ✅ Release the key to restore to 1× speed, with an on-screen speed indicator
+
+- 🌐 支持所有视频网站（包括但不限于 YouTube、Netflix、Zoom recordings 等）
+  🌐 Works on all video websites (including but not limited to YouTube, Netflix, Zoom recordings, etc.)
 
 ---
 
@@ -22,19 +25,18 @@
 2. 打开 Chrome 浏览器，输入 `chrome://extensions`  
    Open Chrome and go to `chrome://extensions`
 
-3. 打开右上角“开发者模式”  
+3. 打开右上角"开发者模式"  
    Enable "Developer Mode" at the top-right corner
 
 <img width="1340" alt="image" src="https://github.com/user-attachments/assets/cbd228a5-6748-4505-a0c5-7890bec4bb59" />
 
-5. 点击“加载已解压的扩展程序”，选择本项目文件夹  
+5. 点击"加载已解压的扩展程序"，选择本项目文件夹  
    Click "Load unpacked" and select this project folder
 
 <img width="1340" alt="image" src="https://github.com/user-attachments/assets/56cb9398-4f15-40ee-a356-6ebf026eea06" />
 
-
-6. 打开任意 YouTube 视频页，尽情体验！  
-   Open any YouTube video and enjoy!
+6. 打开任意视频网站，尽情体验！  
+   Open any video website and enjoy!
 
 ---
 
@@ -45,7 +47,7 @@ Click the icon from the toolbar → Enter your desired speed (e.g. 2.5, 4.0)
 
 <img width="304" alt="image" src="https://github.com/user-attachments/assets/eadbf9a9-21c2-41ee-a75c-7bade9327dd9" />
 
-2. 点击扩展图标 → “选项” → 输入你喜欢的倍速值（如 2.5、4.0）  
+2. 点击扩展图标 → "选项" → 输入你喜欢的倍速值（如 2.5、4.0）  
 Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4.0)
 
 <img width="750" alt="image" src="https://github.com/user-attachments/assets/7963efff-eff3-40b5-b0d7-2584fb5ac153" />
@@ -58,14 +60,17 @@ Click the extension icon → "Options" → Enter your desired speed (e.g. 2.5, 4
 - 支持键盘操作，无需鼠标点击  
   Keyboard control, no mouse needed
 
-- 自动拦截 YouTube 原生长按快进  
-  Overrides YouTube's default long-press skip behavior
+- 自动拦截视频网站原生长按快进  
+  Overrides default long-press skip behavior on video websites
 
 - 支持浮窗实时显示当前速度  
   On-screen indicator shows current playback speed
 
 - 设置页可自定义长按倍速值  
   Options page allows customizing the hold speed value
+
+- 支持所有主流视频网站  
+  Works on all major video platforms
 
 ---
 
