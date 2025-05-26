@@ -63,7 +63,14 @@
                     }
                 }, 100);
             }
-            video.play();
+            // play 前检查是否有有效资源
+            if ((video.src && video.src.trim() !== '') || (video.querySelector('source') && video.querySelector('source').src)) {
+                try {
+                    video.play();
+                } catch (e) {
+                    console.warn('video.play() 失败:', e);
+                }
+            }
         });
         showIndicator(`${Math.abs(rate)}× ${rate > 0 ? '→' : '←'}`);
     }

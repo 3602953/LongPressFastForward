@@ -18,7 +18,7 @@
 1. 克隆或下载本项目，并进行解压：  
    Clone or download this project:
    ```bash
-   git clone https://github.com/3602953/Youtube_LongPressFastForward.git
+   git clone https://github.com/3602953/LongPressFastForward.git
    ```
    and upzip the file
 
